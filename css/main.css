@@ -1,26 +1,26 @@
-.about-us, .container, .hero-section, .header {
+.about-us, .container, .section__container, .hero-section, .header {
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
 }
 @media screen and (min-width: 480px) {
-  .about-us, .container, .hero-section, .header {
+  .about-us, .container, .section__container, .hero-section, .header {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .about-us, .container, .hero-section, .header {
+  .about-us, .container, .section__container, .hero-section, .header {
     width: 768px;
   }
 }
 @media screen and (min-width: 1168px) {
-  .about-us, .container, .hero-section, .header {
+  .about-us, .container, .section__container, .hero-section, .header {
     width: 1168px;
   }
 }
 
-.about-us {
+.about-us, .advantages {
   padding: 64px 0;
 }
 
@@ -465,4 +465,45 @@ img {
 
 .heading-text {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.advantages__container {
+  width: 100%;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__container {
+    width: 440px;
+  }
+}
+
+.advantages {
+  position: relative;
+}
+.advantages::before {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 16px;
+  width: 396px;
+  height: 160px;
+  background-image: url(../images/decor_bcg.png);
+  content: "";
+}
+@media screen and (min-width: 768px) {
+  .advantages::before {
+    top: 24px;
+    width: 600px;
+  }
 }/*# sourceMappingURL=main.css.map */
