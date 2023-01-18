@@ -1,6 +1,10 @@
 .header {
     @extend %container;
-    padding-top: 48px;
+    padding-top: 32px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 48px;
+    }
 
     &__container {
             display: flex;
@@ -17,8 +21,12 @@
         }
     
         &__menu {
-            display: flex;
-            gap: 40px;
+            display: none;
+            
+            @media screen and (min-width: 768px) {
+                    display: flex;
+                        gap: 40px;
+                }
         }
     
         &__link {
@@ -53,8 +61,26 @@
                 &__button {
                     @extend %button;
                     padding: 12px 16px;
-                    text-transform: capitalize;
-                    font-variant: small-caps;
+                        text-transform: capitalize;
+                        font-variant: small-caps;
+                    
+                    @media screen and (max-width: 767px) {
+                            display: none;
+                        }
+                }
+
+                &__burger {
+                    display: none;
+                    border: none;
+                    border-color: transparent;
+
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                    }
+
+                    &:hover {
+                        fill: $colorBrand;
+                    }
                 }
 }
 
