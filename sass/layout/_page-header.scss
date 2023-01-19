@@ -72,7 +72,7 @@
                 &__burger {
                     display: none;
                     border: none;
-                    border-color: transparent;
+                    background-color: transparent;
 
                     @media screen and (max-width: 768px) {
                         display: block;
