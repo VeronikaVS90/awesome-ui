@@ -35,7 +35,7 @@
               <li><a class="header__link header__link--current" href="#about">About</a></li>
               <li><a class="header__link" href="#team">Team</a></li>
             </ul>
-            <button class="header__burger" type="button">
+            <button class="header__burger js-open-menu" type="button">
               <svg width="40" height="40">
                 <use href="./images/icons.svg#icon-burgermenu"></use>
               </svg>
@@ -378,6 +378,27 @@
       </div>
     </footer>
 
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="mobile-menu__close js-close-menu" type="button">
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-closeui"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#benefits">Benefits</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#features">Features</a>
+          </li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about"> About </a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#team">Team</a></li>
+        </ul>
+        <button class="mobile-menu__button" type="button">Register</button>
+      </div>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal__container">
@@ -470,6 +491,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
