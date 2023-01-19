@@ -1,7 +1,10 @@
 .about-us {
     @extend %container;
     @extend %section;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+   
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
 }
