@@ -794,6 +794,10 @@ img {
   text-transform: uppercase;
 }
 
+.about-us {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 @media screen and (min-width: 768px) {
   .about-us {
     display: -webkit-box;
@@ -807,10 +811,10 @@ img {
             align-items: center;
   }
 }
-
-.team {
-  padding-top: 24px;
+.about-us__thumb {
+  padding-bottom: 48px;
 }
+
 @media screen and (min-width: 768px) {
   .team__list {
     display: -webkit-box;

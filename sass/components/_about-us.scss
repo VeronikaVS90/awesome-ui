@@ -1,10 +1,16 @@
 .about-us {
-    // @extend %container;
     // @extend %section;
+    // @extend %container;
+    padding-top: 48px;
+    padding-bottom: 48px;
    
     @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    }
+
+    &__thumb {
+        padding-bottom: 48px;
     }
 }

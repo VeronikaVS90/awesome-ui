@@ -1,7 +1,7 @@
 .team {
     @extend %container;
     @extend %section;
-    padding-top: 24px;
+   
 
     &__list {
         @media screen and (min-width: 768px) {
