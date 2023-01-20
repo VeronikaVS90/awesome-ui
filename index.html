@@ -195,12 +195,25 @@
       <section class="section" id="about">
         <div class="about-us container">
           <div class="about-us__thumb">
-            <img
-              src="./images/people.png"
-              alt="Team members are discussing project"
-              width="610"
-              height="570"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/people-desktop.jpg    1x,
+                  ./images/desktop/people-desktop@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                srcset="
+                  ./images/mobile/people-mobile.jpg    1x,
+                  ./images/mobile/people-mobile@2x.jpg 2x
+                "
+                src="./images/mobile/people-mobile.jpg"
+                alt="Discussing project"
+                class="about-us__img"
+              />
+            </picture>
           </div>
 
           <div class="heading-thumb">
@@ -230,7 +243,22 @@
 
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/one.jpg" alt="man in the suit" width="180" height="264" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/one-desktop.jpg    1x,
+                    ./images/desktop/one-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="./images/mobile/one-mobile.jpg 1x, ./images/mobile/one-mobile@2x.jpg 2x"
+                  src="./images/mobile/one-mobile.jpg"
+                  alt="member-one"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__content">
                 <p class="team__text">CTO May & Baker</p>
                 <h3 class="team__title">Tayo Oshinuwa</h3>
@@ -241,7 +269,22 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/two.jpg" alt="woman with ponytail" width="170" height="264" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/two-desktop.jpg    1x,
+                    ./images/desktop/two-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="./images/mobile/two-mobile.jpg 1x, ./images/mobile/two-mobile@2x.jpg 2x"
+                  src="./images/mobile/one-mobile.jpg"
+                  alt="member-two"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__content">
                 <p class="team__text">CTO May & Baker</p>
                 <h3 class="team__title">Tayo Oshinuwa</h3>
@@ -252,7 +295,25 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/three.jpg" alt="man in the cap" width="180" height="264" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/three-desktop.jpg    1x,
+                    ./images/desktop/three-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  srcset="
+                    ./images/mobile/three-mobile.jpg    1x,
+                    ./images/mobile/three-mobile@2x.jpg 2x
+                  "
+                  src="./images/mobile/three-mobile.jpg"
+                  alt="member-three"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__content">
                 <p class="team__text">CTO May & Baker</p>
                 <h3 class="team__title">Tayo Oshinuwa</h3>

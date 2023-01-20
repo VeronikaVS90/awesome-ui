@@ -813,6 +813,42 @@ img {
 }
 .about-us__thumb {
   padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.about-us__thumb::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -999;
+  top: 16px;
+  left: 16px;
+  width: 360px;
+  height: 334px;
+  background: linear-gradient(197.92deg, rgba(239, 128, 49, 0) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0) 103.02%);
+}
+@media screen and (min-width: 768px) {
+  .about-us__thumb::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -999;
+    top: 40px;
+    left: 40px;
+    width: 570px;
+    height: 530px;
+    background-image: url(/images/desktop/aboutusback-desk.png);
+  }
+}
+.about-us__img {
+  height: 334px;
+}
+@media screen and (min-width: 768px) {
+  .about-us__img {
+    height: 530px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -840,6 +876,9 @@ img {
   .team__item:last-child {
     margin-bottom: 0;
   }
+}
+.team__img {
+  height: 264px;
 }
 .team__content {
   position: absolute;
