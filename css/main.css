@@ -180,20 +180,21 @@ img {
   padding: 12px 16px;
   text-transform: capitalize;
   font-variant: small-caps;
+  display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__button {
-    display: none;
+    display: block;
   }
 }
 .header__burger {
-  display: none;
+  display: block;
   border: none;
   background-color: transparent;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header__burger {
-    display: block;
+    display: none;
   }
 }
 .header__burger:hover {
